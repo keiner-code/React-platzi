@@ -1,9 +1,9 @@
 import React from 'react';
 import '../assets/style/components/CarouselItem.scss';
 
-const CarouselItem = () =>(
+const Carouselitem = () =>(
   <div className="carousel-item">
-  <img className="carousel-item__img" src="https://images.pexels.com/photos/789822/pexels-photo-789822.jpeg?auto=format%2Ccompress&cs=tinysrgb&dpr=2&h=750&w=1260" alt=""  />
+  <img className="carousel-item__img" src="https://hdwallpaperim.com/wp-content/uploads/2017/08/25/461264-reactJS-Facebook-JavaScript-minimalism-artwork-simple_background-748x421.jpg" alt="imagen"  />
   <div className="carousel-item__details">
     <div>
       <img className="carousel-item__details--img" src="../assets/play-icon.png" alt="Play Icon"/> 
@@ -15,4 +15,4 @@ const CarouselItem = () =>(
 </div>
 );
 
-export default CarouselItem;
+export default Carouselitem;

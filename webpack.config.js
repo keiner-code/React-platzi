@@ -1,6 +1,7 @@
 const path = require('path');
 const HtmlWebPackPlugin = require('html-webpack-plugin');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
+// const FileLoader = require('file-loader');
 
 module.exports = {
     entry: './src/index.js',
@@ -40,11 +41,11 @@ module.exports = {
             },
             {
                 test: /\.(png|jpe?g|gif)$/i,
-                use: [
-                     {
-                         loader: 'file-loader',
-                     },
-                ]
+                loader: 'file-loader',
+                options: {
+                    name: '[path][name].[ext]',
+
+                }
             },
         ]
     },

@@ -40,10 +40,9 @@ module.exports = {
                 ]
             },
             {
-                test: /\.(png|jpe?g|gif)$/i,
-                loader: 'file-loader',
+                test: /\.(png|jpg|gif)$/,
                 options: {
-                    name: '[path][name].[ext]',
+                    name: 'assets/[hash].[ext]',
 
                 }
             },
